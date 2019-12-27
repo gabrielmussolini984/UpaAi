@@ -1,0 +1,58 @@
+<!-- Home -->
+<article id="home" class="panel intro">
+  <header>
+    <h1>Upa Ai!</h1>
+    <p>Projeto de Upload de Arquivos.</p>
+  </header>
+  <a href="#work" class="jumplink pic">
+    <span class="arrow icon solid fa-chevron-right"><span>Upa Ai!</span></span>
+    <img src="images/me.jpg" alt="" />
+  </a>
+</article>
+<!-- Work -->
+<article id="work" class="panel">
+  {{>_msg}}
+  <header>
+    <h2>Envie Seu Arquivo!</h2>
+  </header>
+  <p>
+    Preencha todo o formulário.
+  </p>
+  <section>
+    <form action="/upaai" method="POST" enctype="multipart/form-data">
+      <div>
+        <div class="row">
+          <div class="col-6 col-12-medium">
+            <input type="text" name="name" placeholder="Nome" required/>
+          </div>
+          <div class="col-6 col-12-medium">
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="col-12">
+            <input type="file" name="arquivo" required>
+          </div>
+          <div class="col-12">
+            <input type="submit" value="Upa AI!" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+</article>
+<article id="folder" class="panel">
+  <header>
+    <h2>Arquivos Enviados!</h2>
+  </header>
+  <p>
+    Aqui está listado todos arquivos ja upados, no UPA AI!.
+  </p>
+  <section>
+    <span style="display: inline-bloc; color: aqua; font-size: 30px;" class="icon solid fa-folder">
+      <p style="color: black; font-size: 15px; font-weight: bold;">Arquivo 1</p>
+    </span>
+     <span style="display: inline-bloc; color: aqua; font-size: 30px;" class="icon solid fa-folder">
+      <p style="color: black; font-size: 15px; font-weight: bold;">Arquivo 1</p>
+    </span>
+    <input   type="submit" value="Arquivo 1!" />
+  </section>
+</article>
