@@ -1,12 +1,14 @@
-{{#if success_msg}}
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>{{success_msg}}</strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <a href="http://google.com"><span aria-hidden="true">&times;</span></a>
-    </button>
-</div>
+{{#if erros}}
+<div class="alert alert-danger text-center" role="alert">
+  {{#each erros}}
+  {{this}}<br>
+  {{/each}}
+  </div>
 {{/if}}
-
-{{#if error_msg}}
-    <h1>{{error_msg}}</h1>
+{{#if success}}
+<div class="alert alert-success text-center" role="alert">
+  {{#each success}}
+  {{this}}<br>
+  {{/each}}
+  </div>
 {{/if}}
