@@ -5,7 +5,7 @@
 
 Um app que permite fazer upload de arquivos.
 
-![](/header.png)
+![](header.png)
 
 
 ## Exemplo de uso
